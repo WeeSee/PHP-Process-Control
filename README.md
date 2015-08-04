@@ -1,9 +1,11 @@
 PHP Process Control
 ===================
 
-This little coding test was done to play a little
+This coding exercise was done to play a little
 bit with parallel execution of PHP scripts by creating
 and monitoring UNIX processes.
+
+Result: I'm happy it works!
 
 Thanks [Dale Hurley](https://github.com/dalehurley) for inspiration with
 (https://github.com/dalehurley/PHP-Process-Manager).
