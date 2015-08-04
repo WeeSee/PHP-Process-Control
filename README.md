@@ -37,8 +37,9 @@ Every PHP script is killed if the execution time is exceeded.
 
 # Demo
 
-The main lines in php-process.php are (the number denotes seconds after
-the script is going to be killed):
+The main lines in php-process.php are used to specify the scripts
+to be started (the number denotes seconds after the script is
+going to be killed):
 
 ```
 	$manager->addScript("doit.php 1", 5);
@@ -52,7 +53,7 @@ the script is going to be killed):
 On my Ubuntu system the demo output ist started by
 
 ```
-php php-process.php
+$ php php-process.php
 ```
 
 and then shows:
@@ -79,6 +80,10 @@ Done: doit.php 3 pid=25222
 doit.php 6 (25230): ready
 Done: doit.php 6 pid=25230
 ```
+
+The processes run fully parallel. After script 1
+ends, script 4 is started but not more, since we limited
+parallel processes to 3. And so on...
 
 
 
