@@ -15,15 +15,23 @@ https://github.com/dalehurley/PHP-Process-Manager.
 
 There are two classes
 
-* Process.php: A *Process* represents a UNIX process
-* ProcessManager.php: The ProcessManager takes a list of PHP scripts and executes them in parallel
-with a configurable maximum of parallellzation. Every PHP script is killed if the execution time is exceeded.
+* Process.php
+* ProcessManager.php
 
-and two PHP scripts for demo:
+and two PHP user scripts for demo:
 
 * doit.php: This is the worker PHP script that is subject to be executed. It runs 30 seconds.
 * php-process.php: This starts the demo.
 
+## Process
+
+A **Process** represents a UNIX process
+
+## ProcessManager
+
+The **ProcessManager** takes a list of PHP scripts and executes them in parallel
+with a configurable maximum of parallellzation. Every PHP script is killed
+if the execution time is exceeded.
 
 
 
