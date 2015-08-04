@@ -8,15 +8,16 @@ and monitoring UNIX processes.
 Result: I'm happy it works!
 
 Thanks [Dale Hurley](https://github.com/dalehurley) for inspiration with
-(https://github.com/dalehurley/PHP-Process-Manager).
+https://github.com/dalehurley/PHP-Process-Manager.
 
 
 # How does it work?
 
 There are two classes
 
-* Process.php
-* ProcessManager.php
+* Process.php: A *Process* represents a UNIX process
+* ProcessManager.php: The ProcessManager takes a list of PHP scripts and executes them in parallel
+with a configurable maximum of parallellzation. Every PHP script is killed if the execution time is exceeded.
 
 and two PHP scripts for demo:
 
@@ -24,13 +25,6 @@ and two PHP scripts for demo:
 * php-process.php: This starts the demo.
 
 
-## Process
 
-A *Process* represents a UNIX process.
 
-##  ProcessManager
 
-The ProcessManager takes a list of PHP scripts and executes them in parallel
-with a configurable maximum of parallellzation.
-
-Every PHP script is killed if the execution time is exceeded.
