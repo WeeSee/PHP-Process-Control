@@ -6,11 +6,11 @@
 	//$manager->executable  = "php";
 
 
-	$manager->addScript("doit.php 1", 4);
-	$manager->addScript("doit.php 2", 4);
-	$manager->addScript("doit.php 3", 4);
-	$manager->addScript("doit.php 4", 35);
-	$manager->addScript("doit.php 5", 35);
+	$manager->addScript("doit.php 1", 5);
+	$manager->addScript("doit.php 2", 10);
+	$manager->addScript("doit.php 3", 35);
+	$manager->addScript("doit.php 4", 5);
+	$manager->addScript("doit.php 5", 10);
 	$manager->addScript("doit.php 6", 35);
 
 	$manager->exec();
